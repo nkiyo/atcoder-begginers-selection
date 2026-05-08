@@ -5,13 +5,17 @@ function Main(input: string) {
   const len = parseInt(lines[0], 10);
   let nums = lines[1].split(" ").map(e => parseInt(e, 10))
   assert(len === nums.length);
+
   console.log(nums)
-  nums = nums.map(e => e/2)
+  const f = nums.filter(e => e % 2 != 0)
+  console.log(f)
+  nums = nums.map(e => e / 2)
   console.log(nums)
-  nums = nums.map(e => e/2)
+  nums = nums.map(e => e / 2)
   console.log(nums)
 
   // TODO 2で割り切れる回数をstdoutすること
+  // 
   // const s = lines[1].substring(0, 3);
   // const r = s.split('').filter(e => e === '1')
   // console.log(r.length)
