@@ -1,5 +1,5 @@
 function Main(input: string) {
-  const lines = input.split("\\n");
+  const lines = input.split("\n");
   const a = parseInt(lines[0], 10)
   const [b, c] = lines[1].split(" ").map(e => parseInt(e, 10));
   const s = lines[2]
